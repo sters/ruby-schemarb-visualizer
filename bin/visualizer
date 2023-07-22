@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift("#{__dir__}/../lib")
+
+require 'visualizer/visualizer'
+
+exit 1 if ARGV.length != 1
+
+puts Visualizer.new(ARGV[0]).simple
